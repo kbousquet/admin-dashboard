@@ -11,11 +11,13 @@ body{
 }
 
 .header{
+    margin: 0px;
     grid-row: 1/2;
     box-shadow: 0 4px 2px -2px rgb(7, 7, 7);
     display:grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, max(100px));
+    
 }
 
 .sidebar{
@@ -30,6 +32,7 @@ body{
     display:grid;
     grid-template-columns: 100px 1fr;
     align-items: center;
+    font-weight: bold;
 }
 
 .right{
@@ -44,6 +47,7 @@ body{
     display:grid;
     grid-template-columns: 100px 1fr;
     align-items: center;
+    font-weight: bold;
 }
 
 .main-content{
@@ -54,13 +58,29 @@ body{
 }
 
 .projects{
-    background-color: #cc9a27;
+    margin: 20px;
     grid-row: 1/3;
     grid-column:1/2;
+    display:grid;
+    grid-template-rows: 60px 1fr;
+    
 }
 
-.announcements{
-    background-color: aquamarine;
+.projects-container{
+    display:grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project{
+    background-color: white;
+    border-radius:10px;
+    
+}
+
+.announcement-container{
+    background-color: white;
 }
 
 .header-buttons{
@@ -82,14 +102,45 @@ body{
 .search{
     display:flex;
     align-items: center;
+    
 }
 
 #search-bar{
     background-color:#E2E8F0;
-    border:none;
+    border:red;
     border-radius:20px;
     height:25px;
+    flex-grow:1;
 }
+
+.login-info{
+
+}
+
+.greeting{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(2, max(30px));
+    
+}
+
+.greeting>img{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.greeting>p{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.greeting>h1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    
+}
+
+
 
 .footer{
     width:100%;
