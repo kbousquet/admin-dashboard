@@ -98,15 +98,33 @@ body{
 
 .project-highlight {
     background-color:#f0b429;
-    width:15px;
+    width:2%;
  }
 
- 
-
-.project-info{
-    padding: 0px 10px 0px 10px;
-    
+ .project-info{
+    padding: 0px 25px 0px 25px;
+    width:  98%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
 }
+
+.project-links{
+    padding-top: 20px;
+    align-self: flex-end;
+}
+
+.project-info>p{
+    color:rgb(82, 82, 82);
+    margin-top:0px;
+}
+
+h4{
+    font-size: 20px;
+    padding-bottom:0px;
+    margin-bottom: 0px;
+}
+
 
 .announcements{
     margin: 20px 20px 0px 0px;
@@ -123,6 +141,25 @@ body{
     border-radius:10px;
 }
 
+.announcement-section>h4{
+    font-size:15px;
+    padding-bottom:0px;
+    margin-bottom: 0px;
+    margin-left: 25px;
+}
+
+.announcement-section>p{
+    color:rgb(82, 82, 82);
+    margin-top:0px;
+    font-size:14px;
+    margin: 0px 25px 0px 25px;
+    padding-bottom: 15px;
+}
+
+.bottom-border{
+    border-bottom: rgb(177, 177, 177) solid 1px;
+}
+
 .trending{
     margin: 20px 20px 20px 0px;
     display:grid;
@@ -135,7 +172,27 @@ body{
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius:10px;
+    display:grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 25px;
 }
+
+.trending-words>h4{
+    font-size:15px;
+    padding-bottom:0px;
+    margin-bottom: 0px;
+    margin-left: 25px;
+}
+
+.trending-words>p{
+    color:rgb(82, 82, 82);
+    margin-top:0px;
+    font-size:14px;
+    margin: 0px 25px 0px 25px;
+    padding-bottom: 15px;
+}
+
 
 .bold{
     font-weight: bold;
@@ -207,8 +264,6 @@ body{
 .greeting-words>h1{
     margin:0;
 }
-
-
 
 .footer{
     width:100%;
